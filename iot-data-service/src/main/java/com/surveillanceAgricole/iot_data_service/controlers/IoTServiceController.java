@@ -1,4 +1,4 @@
-package com.surveillanceAgricole.iot_data_service;
+package com.surveillanceAgricole.iot_data_service.controlers;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
