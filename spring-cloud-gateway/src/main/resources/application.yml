@@ -1,0 +1,10 @@
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      routes:
+        - id: iot-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/iot/**
