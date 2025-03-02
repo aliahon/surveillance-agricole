@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @EnableKafka
 public class KafkaConsumer {
 
-    @KafkaListener(topics="topic-example", groupId = "grp1")
+    @KafkaListener(topics="topic-exemple-1", groupId = "grp1")
     public void listen(ConsumerRecord<String, String> record) {
         System.out.println("Received data from Kafka:"+record.value());
     }
